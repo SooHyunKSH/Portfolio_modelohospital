@@ -1,0 +1,219 @@
+@charset 'UTF-8';
+
+.sub02_main_wrap {
+  background-image: url("../img/sub02/sub0207_top.jpg");
+}
+
+.sub02_main_wrap .text_box .title span {
+  display: block;
+  letter-spacing: 4px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.sub02_main_wrap .text_box .title h3 {
+  font-size: 60px;
+  margin: 40px 0;
+  letter-spacing: -2px;
+  font-weight: 200;
+}
+
+.sub02_main_wrap .text_box .title .line {
+  position: relative;
+  width: 40px;
+  height: 1px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section01_wrap h3 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 55px;
+}
+
+.section01_wrap p,
+.section03_wrap p {
+  width: 800px;
+  margin: 60px auto 0;
+  line-height: 2;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.more_view_btn,
+.close_view_btn {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 25px;
+  font-size: 16px;
+  border: 1px solid #000;
+  margin: 80px 0 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.more_img {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.more_img>img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.more_view_btn:hover,
+.close_view_btn:hover {
+  background-color: #35598f;
+  color: #fff;
+}
+
+.more_content {
+  display: none;
+}
+
+.section02 {
+  background: url("../img/sub02/sub0207_bg.jpg") center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.section02 h3,
+.section03_wrap h3 {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 55px;
+  padding-bottom: 50px;
+}
+
+.section02 p {
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 200;
+}
+
+.toxin_common_book {
+  height: 2061px;
+  background: url("../img/sub02/sub0203_bg01.jpg") center no-repeat;
+  text-align: center;
+  padding: 100px 0 180px;
+}
+
+.toxin_common_wrap img {
+  width: 800px;
+  height: auto;
+}
+
+.toxin_common_wrap>p {
+  text-align: left;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.toxin_common_wrap p strong {
+  font-size: 24px;
+}
+
+.review_box {
+  display: inline-block;
+  margin: 55px 0;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.review_box p {
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 40px 0 0;
+}
+
+.review_box span {
+  display: inline-block;
+  width: 320px;
+  height: 55px;
+  line-height: 55px;
+  margin: 45px auto;
+  background-color: #fff;
+  font-size: 20px;
+}
+
+.toxin_common_history {
+  padding: 160px 0 0;
+  max-width: 1920px;
+  height: 1420px;
+  margin: 0 auto -20px;
+  overflow: hidden;
+}
+
+.toxin_common_history h3,
+.toxin_common_history p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.toxin_common_history h3 {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 60px;
+  padding-bottom: 60px;
+}
+
+.toxin_common_history .img_group {
+  overflow: hidden;
+}
+
+.toxin_common_history .img_group ul {
+  float: left;
+  width: calc(100% / 4);
+}
+
+.toxin_common_history .img_group ul li {
+  position: relative;
+  width: 100%;
+}
+
+.toxin_common_history .img_group ul li img {
+  width: 100%;
+}
+
+.toxin_common_history .img_group ul li .txt_box {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 20%;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  z-index: 10;
+}
+
+.toxin_common_history .img_group ul li .txt_box p:first-child {
+  font-size: 40px;
+}
+
+.toxin_common_history .img_group ul li .txt_box p:last-child {
+  line-height: 35px;
+}
+
+.toxin_common_history .sub03_txt_line {
+  width: 50px;
+  height: 1px;
+  background-color: #fff;
+  margin: 30px auto;
+}
+
+.toxin_common_history .img_group ul li:hover .txt_box {
+  display: block;
+}

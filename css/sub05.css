@@ -1,0 +1,259 @@
+@charset 'UTF-8';
+
+.sub05_main_wrap {
+  background: url("../img/sub05/sub0502_top.jpg") no-repeat center;
+}
+
+/* section01 area */
+.con01_wrap {
+  position: relative;
+  display: inline-block;
+  width: 780px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 60px;
+}
+
+.con01_wrap {
+  display: inline-block;
+}
+
+.con01_wrap>p {
+  font-size: 22px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* section02 area */
+#section02 {
+  background: #ededed;
+}
+
+.section02_wrap h3 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 55px;
+}
+
+.section02_wrap>p {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px auto;
+  font-weight: 300;
+}
+
+.con02_wrap {
+  width: 780px;
+  margin: 50px auto;
+}
+
+.con02_wrap ul li {
+  float: left;
+  width: 32%;
+  height: 55px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  line-height: 55px;
+  color: #989898;
+  background: #d8d8d8;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+.con02_wrap ul li:hover {
+  color: #fff;
+  background: #989898;
+}
+
+.con02_wrap ul li:last-child {
+  margin-right: 0;
+}
+
+.con02_list_active {
+  display: inline-block;
+  display: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.con02_list_active .con02_preview {
+  text-align: center;
+}
+
+.con02_list_active .con02_preview>p {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.con02_list_active .con02_preview span {
+  display: block;
+  margin: 20px 0 30px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.more_view_btn,
+.close_view_btn {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 25px;
+  font-size: 16px;
+  border: 1px solid #000;
+  margin: 80px 0 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.more_view_btn:hover,
+.close_view_btn:hover {
+  background-color: #35598f;
+  color: #fff;
+}
+
+.more_content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding: 40px 0 50px;
+  margin-top: -130px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.more_content p {
+  width: 790px;
+  padding-left: 100px;
+  margin: 60px auto 0;
+  line-height: 2;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.more_content span {
+  font-weight: 500;
+}
+
+.more_content i {
+  display: inline-block;
+  width: 99px;
+}
+
+.con02_list_active:nth-of-type(1) {
+  display: inline-block;
+}
+
+/* section03 area */
+#section03 {
+  height: 1180px;
+  background: url("../img/sub05/sub0502_bg01.jpg") no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+
+.section03_wrap>p {
+  width: 780px;
+  margin: 55px auto 90px;
+  line-height: 2.2;
+  font-weight: 300;
+}
+
+.section03_wrap>p>span {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.con03_wrap {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.con03_wrap ul {
+  display: inline-block;
+  position: absolute;
+  width: 780px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.con03_wrap ul li:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.con03_wrap ul li {
+  float: left;
+  width: 370px;
+  line-height: 70px;
+  margin-bottom: 37px;
+  font-weight: 300;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+}
+
+.con03_wrap ul li:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* section04 area */
+#section04 {
+  background-color: #f7f7f7;
+}
+
+.com04_wrap {
+  padding: 30px 220px;
+  background-position: 15% 0, 85% 95%;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+  background-image: url("../img/sub05/sub0305_serif01.png"),
+    url("../img/sub05/sub0305_serif02.png");
+  background-repeat: no-repeat, no-repeat;
+}
+
+.com04_wrap>span {
+  display: block;
+  font-weight: 400;
+}
+
+/* section05 area */
+.section05_wrap ul {
+  display: inline-block;
+}
+
+.section05_wrap ul li {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+.section05_wrap ul li:first-child {
+  padding-right: 70px;
+}
+
+.section05_wrap ul li h3 {
+  text-align: left;
+  margin-bottom: 70px;
+}
+
+.section05_wrap ul li p {
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.section05_wrap ul li p span {
+  font-size: 25px;
+  display: block;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
