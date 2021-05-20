@@ -44,8 +44,8 @@ a {
   border-bottom: 1px solid #f5f5f5;
 }
 
-#header_wrap.hover_effect .gnb_wrap>ul>li a,
-#header_wrap.hover_effect .login>ul>li a {
+#header_wrap.hover_effect .gnb_wrap > ul > li a,
+#header_wrap.hover_effect .login > ul > li a {
   color: #6b6b6b;
 }
 
@@ -72,7 +72,7 @@ a {
   left: 5%;
 }
 
-#header_wrap.gnb_bg .gnb_wrap ul>li a {
+#header_wrap.gnb_bg .gnb_wrap ul > li a {
   color: #6b6b6b;
 }
 
@@ -102,17 +102,17 @@ a {
   right: 0;
 }
 
-.head .right_menu .login>ul {
+.head .right_menu .login > ul {
   display: flex;
   justify-content: right;
   margin-right: 15px;
 }
 
-.head .right_menu .login>ul>li {
+.head .right_menu .login > ul > li {
   margin-right: 15px;
 }
 
-.head .right_menu .login>ul>li>a {
+.head .right_menu .login > ul > li > a {
   font-family: "Noto Sans", sans-serif;
   font-size: 16px;
   color: #fff;
@@ -133,7 +133,7 @@ a {
   width: 800px;
 }
 
-#header_wrap .gnb_wrap>ul>li {
+#header_wrap .gnb_wrap > ul > li {
   display: block;
   width: 110px;
   text-align: center;
@@ -154,7 +154,7 @@ a {
   display: none;
   position: absolute;
   width: 100%;
-  min-width: 800px;
+  min-width: 1200px;
   height: 400px;
   top: 35px;
   right: 50%;
@@ -169,9 +169,9 @@ a {
   overflow: hidden;
 }
 
-#header_wrap .sub_gnb>div {
+#header_wrap .sub_gnb > div {
   float: left;
-  min-height: 400px
+  min-height: 400px;
 }
 
 #header_wrap .sub_gnb.is_show {
@@ -179,8 +179,8 @@ a {
 }
 
 #header_wrap .sub_gnb_left {
-  padding: 30px 20px;
-  width: 45%;
+  padding: 30px 0 30px 20px;
+  width: 40%;
   height: 100%;
 }
 
@@ -196,22 +196,18 @@ a {
 }
 
 #header_wrap .sub_gnb_right {
-  display: flex;
-  padding: 30px 20px 30px 50px;
-  width: 55%;
+  padding: 30px 20px 30px 20px;
+  width: 60%;
 }
 
 #header_wrap .sub_gnb_right ul {
-  min-width: 250px;
+  float: left;
+  min-width: 200px;
 }
 
 #header_wrap .sub_gnb_right ul li {
   padding-bottom: 3px;
   margin-bottom: 10px;
-}
-
-#header_wrap .sub_gnb_right img {
-  padding-left: 80px;
 }
 
 /* all menu 영역 */
@@ -261,7 +257,7 @@ a {
   height: 500px;
   border-right: 1px solid #e8e8e8;
   text-indent: 25px;
-  font-family: "Noto Sans KR"sans-serif;
+  font-family: "Noto Sans KR" sans-serif;
   font-size: 28px;
   font-weight: 500;
   padding-top: 15px;
@@ -345,7 +341,7 @@ a {
 #sub_main_wrap .text_box .text {
   font-size: 20px;
   font-weight: 100;
-  font-family: "Noto Sans KR"sans-serif;
+  font-family: "Noto Sans KR" sans-serif;
   line-height: 2;
 }
 
@@ -388,7 +384,7 @@ section {
 
 .title {
   text-align: center;
-  font-family: "Noto Sans KR"sans-serif;
+  font-family: "Noto Sans KR" sans-serif;
   font-size: 35px;
   line-height: 55px;
   font-weight: 400;
@@ -521,7 +517,7 @@ section {
   height: auto;
 }
 
-.toxin_common_wrap>p {
+.toxin_common_wrap > p {
   text-align: left;
   letter-spacing: -0.5px;
   font-weight: 400;

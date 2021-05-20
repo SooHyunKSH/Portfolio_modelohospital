@@ -144,7 +144,7 @@ $(function() {
     } else {
       $("sec01_content > ul li .line").removeClass("on");
     };
-    if ($(this).scrollTop() = 70) {
+    if ($(this).scrollTop() > 70 && $(this).scrollTop() < 100) {
       $('.counter').each(function() {
         $(this)
           .prop('Counter', 0)
