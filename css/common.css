@@ -566,7 +566,6 @@ section {
 .toxin_common_history {
   padding: 160px 0 0;
   max-width: 1920px;
-  height: 1420px;
   margin: 0 auto -20px;
   overflow: hidden;
 }
@@ -575,7 +574,7 @@ section {
 .toxin_common_history p {
   text-align: center;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .toxin_common_history h3 {
@@ -587,7 +586,7 @@ section {
 
 .toxin_common_history .img_group {
   overflow: hidden;
-  height: 920px;
+  min-width: 1200px;
 }
 
 .toxin_common_history .img_group ul {
@@ -611,7 +610,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  padding-top: 20%;
+  padding: 10% 0 0 20px;
   background: rgba(0, 0, 0, 0.9);
   color: white;
   z-index: 10;

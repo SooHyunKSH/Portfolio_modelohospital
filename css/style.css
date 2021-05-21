@@ -107,6 +107,7 @@ section {
 /* section 영역 */
 section {
   width: 100%;
+  min-width: 1200px;
 }
 
 .content {

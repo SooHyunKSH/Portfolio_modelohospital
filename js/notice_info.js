@@ -21,4 +21,20 @@ $(function(){
     $(".all_menu_close").on("click",function(){
         allMenu.css("display","none");
     })
+
+      /* common : submenu 노출 */
+  header.on("mouseenter", function() {
+    $(this).addClass("change_hight");
+    $(".gnb_wrap .main_gnb > li").siblings().children(".sub_gnb").removeClass("is_show");
+    $(".gnb_wrap .main_gnb > li:nth-of-type(1)").children(".sub_gnb").addClass("is_show");
+  });
+  header.on("mouseleave", function() {
+    $(this).removeClass("change_hight");
+    $(".gnb_wrap .main_gnb > li:nth-of-type(1)").children(".sub_gnb").removeClass("is_show");
+  });
+
+  $(".gnb_wrap .main_gnb > li").mouseover(function() {
+    $(this).siblings().children(".sub_gnb").removeClass("is_show");
+    $(this).children(".sub_gnb").addClass("is_show");
+  });
 });
