@@ -7,16 +7,12 @@ $(function() {
     /* common : gnb 스크롤 애니메이션 */
     if (scTop > num) {
       header.addClass('gnb_bg');
-      $(".logo").html(
-        "<a href='main.html'><img src='./img/logo2.png' alt='logo'></a>"
-      );
+      $(".logo img").attr("src", "./img/logo2.png");
       $(".login").css("display", "none")
       $(".all_menu_icon").attr("src", "./img/all_menu.png");
     } else if (scTop <= num) {
       header.removeClass('gnb_bg');
-      $(".logo").html(
-        "<a href='main.html'><img src='./img/logo.png' alt='logo'></a>"
-      );
+      $(".logo img").attr("src", "./img/logo.png");
       $(".login").css("display", "block")
       $(".all_menu_icon").attr("src", "./img/all_menu2.png");
     }
@@ -25,16 +21,12 @@ $(function() {
   /*common : header mouseover effect*/
   header.on("mouseover", function() {
     $(this).addClass("hover_effect");
-    $(".logo").html(
-      "<a href='main.html'><img src='./img/logo2.png' alt='logo'></a>"
-    );
+    $(".logo img").attr("src", "./img/logo2.png");
     $(".all_menu_icon").attr("src", "./img/all_menu.png");
   })
   header.on("mouseout", function() {
     $(this).removeClass("hover_effect");
-    $(".logo").html(
-      "<a href='main.html'><img src='./img/logo.png' alt='logo'></a>"
-    );
+    $(".logo img").attr("src", "./img/logo.png");
     $(".all_menu_icon").attr("src", "./img/all_menu2.png");
   })
 
@@ -140,11 +132,11 @@ $(function() {
   $(window).scroll(function() {
     /* section01 animation */
     if ($(this).scrollTop() > 100) {
-      $("sec01_content > ul li .line").addClass("on");
+      $("sec01_content > ul li .ani_line").addClass("on");
     } else {
-      $("sec01_content > ul li .line").removeClass("on");
+      $("sec01_content > ul li .ani_line").removeClass("on");
     };
-    if ($(this).scrollTop() > 70 && $(this).scrollTop() < 100) {
+    if ($(this).scrollTop() == 100) {
       $('.counter').each(function() {
         $(this)
           .prop('Counter', 0)

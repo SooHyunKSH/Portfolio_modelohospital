@@ -34,7 +34,7 @@ a {
   overflow: hidden;
   width: 100%;
   height: 150px;
-  z-index: 9000;
+  z-index: 7000;
   transition: 0.5s;
 }
 
@@ -65,6 +65,7 @@ a {
   left: 0;
   top: 35px;
   transform: translateX(0);
+  z-index: 8000;
 }
 
 #header_wrap.gnb_bg .gnb_wrap {
@@ -78,6 +79,10 @@ a {
 
 #header_wrap.gnb_bg .head .right_menu {
   top: 35px;
+}
+
+#header_wrap.gnb_bg .head .right_menu .all_menu{
+  z-index: 9997;
 }
 
 /*scroll 애니메이션 영역 끝*/
@@ -147,7 +152,7 @@ a {
 
 /* 드롭다운 서브gnb */
 #header_wrap.change_hight {
-  height: 550px;
+  height: 520px;
 }
 
 #header_wrap .sub_gnb {
@@ -161,7 +166,7 @@ a {
   transform: translateX(50%);
   padding: 50px 30px;
   transition: 0.5s;
-  z-index: 9900;
+  z-index: 7900;
   font-size: 18px;
   font-weight: 300;
   line-height: 24px;
@@ -208,6 +213,10 @@ a {
 #header_wrap .sub_gnb_right ul li {
   padding-bottom: 3px;
   margin-bottom: 10px;
+}
+
+#header_wrap .sub_gnb_right ul li a:hover{
+  border-bottom: 1px solid #333;
 }
 
 /* all menu 영역 */
@@ -286,6 +295,7 @@ a {
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
+  min-width: 1200px;
   height: 100vh;
 }
 
@@ -293,6 +303,7 @@ a {
   position: relative;
   display: inline-block;
   width: 100%;
+  min-width: 1200px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -576,6 +587,7 @@ section {
 
 .toxin_common_history .img_group {
   overflow: hidden;
+  height: 920px;
 }
 
 .toxin_common_history .img_group ul {
@@ -656,7 +668,7 @@ footer {
 .info_left li {
   padding: 15px;
   background-color: #545454;
-  line-height: 1;
+  line-height: 14px;
 }
 
 .info_left li a {
