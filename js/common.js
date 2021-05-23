@@ -158,4 +158,21 @@ $(function() {
       $(".section02_wrap").removeClass("on");
     };
   });
+
+  /* sub05 popup menu */
+  $(".pop_list .popup").click(function() {
+    let indexNum = $(this).index() + 1;
+    console.log(indexNum)
+    $(".display_box .pop_display").css("display", "none");
+    $(".display_box .pop_display").each(function() {
+      let thisIndex = $(this).index() + 1;
+      console.log(thisIndex)
+      if (indexNum == thisIndex) {
+        $(this).css("display", "block");
+      }
+    });
+  });
+  $(".pop_close_btn").click(function() {
+    $(".display_box  .pop_display").css("display", "none");
+  });
 });
