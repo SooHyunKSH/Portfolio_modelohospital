@@ -66,7 +66,7 @@ $(function() {
     $('#main_wrap .main_bg').css({
       'background-image': 'url(./img/main0' + changeBg + '.jpg)'
     })
-  }, 5000);
+  }, 3000);
   console.log($('.counter'));
   /* main.html : content 3 counter */
   $('.counter').each(function() {

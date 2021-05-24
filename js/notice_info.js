@@ -37,4 +37,13 @@ $(function(){
     $(this).siblings().children(".sub_gnb").removeClass("is_show");
     $(this).children(".sub_gnb").addClass("is_show");
   });
+
+    /* join checkbox */
+    $("#allck").click(function(){
+      if($("#allck").prop("checked")){
+        $(".ck").prop("checked", true);
+      }else{
+        $(".ck").prop("checked", false);
+      }
+    })
 });
