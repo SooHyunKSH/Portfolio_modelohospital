@@ -14,7 +14,16 @@ $(function() {
       $(".logo img").attr("src", "./img/logo.png");
       $(".login").css("display", "block")
       $(".all_menu_icon").attr("src", "./img/all_menu2.png");
-    }
+      header.mouseenter(function() {
+        $(this).addClass("hover_effect");
+        $(".logo img").attr("src", "./img/logo2.png");
+        $(".all_menu_icon").attr("src", "./img/all_menu.png");
+      }).mouseleave(function() {
+        $(this).removeClass("hover_effect");
+        $(".logo img").attr("src", "./img/logo.png");
+        $(".all_menu_icon").attr("src", "./img/all_menu2.png");
+      });
+    };
   });
 
   /*common : header mouseover effect*/
