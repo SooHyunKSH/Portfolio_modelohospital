@@ -1,16 +1,15 @@
 $(function() {
   let header = $("#header_wrap");
-
+  let num = 10;
   $(window).scroll(function() {
-    let num = 0;
-    let scTop = $(this).scrollTop();
     /* common : gnb 스크롤 애니메이션 */
+    let scTop = $(this).scrollTop();
     if (scTop > num) {
       header.addClass('gnb_bg');
       $(".logo img").attr("src", "./img/logo2.png");
       $(".login").css("display", "none")
       $(".all_menu_icon").attr("src", "./img/all_menu.png");
-    } else if (scTop <= num) {
+    } else if (scTop < num) {
       header.removeClass('gnb_bg');
       $(".logo img").attr("src", "./img/logo.png");
       $(".login").css("display", "block")
@@ -19,16 +18,18 @@ $(function() {
   });
 
   /*common : header mouseover effect*/
-  header.on("mouseover", function() {
-    $(this).addClass("hover_effect");
-    $(".logo img").attr("src", "./img/logo2.png");
-    $(".all_menu_icon").attr("src", "./img/all_menu.png");
-  })
-  header.on("mouseout", function() {
-    $(this).removeClass("hover_effect");
-    $(".logo img").attr("src", "./img/logo.png");
-    $(".all_menu_icon").attr("src", "./img/all_menu2.png");
-  })
+  if ($(window).scrollTop() < num){
+    header.on("mouseover", function() {
+      $(this).addClass("hover_effect");
+      $(".logo img").attr("src", "./img/logo2.png");
+      $(".all_menu_icon").attr("src", "./img/all_menu.png");
+    })
+    header.on("mouseout", function() {
+      $(this).removeClass("hover_effect");
+      $(".logo img").attr("src", "./img/logo.png");
+      $(".all_menu_icon").attr("src", "./img/all_menu2.png");
+    })
+  }
 
   /* common : all menu 클릭시 나타나기 */
   let allMenu = $("#all_menu");
