@@ -10,26 +10,25 @@ $(function() {
       $(".logo img").attr("src", "./img/logo2.png");
       $(".login").css("display", "none")
       $(".all_menu_icon").attr("src", "./img/all_menu.png");
-    } else if (scTop <= num) {
+    } else if (scTop == num || scTop < num) {
       header.removeClass('gnb_bg');
       $(".logo img").attr("src", "./img/logo.png");
       $(".login").css("display", "block")
       $(".all_menu_icon").attr("src", "./img/all_menu2.png");
-    }
+      header.mouseenter(function() {
+        $(this).addClass("hover_effect");
+        $(".logo img").attr("src", "./img/logo2.png");
+        $(".all_menu_icon").attr("src", "./img/all_menu.png");
+      }).mouseleave(function() {
+        $(this).removeClass("hover_effect");
+        $(".logo img").attr("src", "./img/logo.png");
+        $(".all_menu_icon").attr("src", "./img/all_menu2.png");
+      });
+    };
   });
 
   /*common : header mouseover effect*/
-  header.on("mouseover", function() {
-    $(this).addClass("hover_effect");
-    $(".logo img").attr("src", "./img/logo2.png");
-    $(".all_menu_icon").attr("src", "./img/all_menu.png");
-  })
-  header.on("mouseout", function() {
-    $(this).removeClass("hover_effect");
-    $(".logo img").attr("src", "./img/logo.png");
-    $(".all_menu_icon").attr("src", "./img/all_menu2.png");
-  })
-
+  
   /* common : all menu 클릭시 나타나기 */
   let allMenu = $("#all_menu");
   $(".all_menu").click(function() {
