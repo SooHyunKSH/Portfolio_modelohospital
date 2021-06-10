@@ -56,11 +56,6 @@ a {
   border-bottom: 1px solid #f5f5f5;
 }
 
-/* #header_wrap.gnb_bg .gnb_wrap {
-  width: 800px;
-  left: 60%;
-  transform: translateX(-60%);
-} */
 #header_wrap.gnb_bg .head .logo {
   left: 0;
   top: 35px;
@@ -610,10 +605,13 @@ section {
 .toxin_common_history .img_group {
   overflow: hidden;
   min-width: 1200px;
+  max-height: 1200px;
 }
 
 .toxin_common_history .img_group ul {
   float: left;
+  font-size: 0;
+  line-height: 0;
   width: calc(100% / 4);
 }
 
@@ -624,6 +622,7 @@ section {
 
 .toxin_common_history .img_group ul li img {
   width: 100%;
+  object-fit: cover;
 }
 
 .toxin_common_history .img_group ul li .txt_box {
@@ -660,7 +659,7 @@ section {
 
 /* footer 영역 */
 footer {
-  position: absolute;
+  position: relative;
   width: 100%;
   padding: 100px 0;
   background-color: #3d3d3d;
